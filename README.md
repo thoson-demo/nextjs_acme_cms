@@ -1,6 +1,7 @@
 # NextJS Dashboard Project
 
-🔗 **[Live Demo on GitHub Pages](#)** | 📐 **UI Template:** [next-learn-dashboard.vercel.sh](https://next-learn-dashboard.vercel.sh/)
+- 🔗 **[Live Demo on GitHub Pages](https://thoson-demo.github.io/nextjs_acme_cms/)**
+- 📐 **UI Template:** [https://next-learn-dashboard.vercel.sh](https://next-learn-dashboard.vercel.sh/)
 
 ## Features
 
