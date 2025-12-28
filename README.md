@@ -139,3 +139,80 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+## Project Structure
+
+<details>
+<summary>Click to expand folder structure</summary>
+
+```
+nextjs_acme_cms/
+├── .github/
+│   └── workflows/
+│       └── main.yml          # GitHub Actions workflow for deployment
+├── app/
+│   ├── dashboard/
+│   │   ├── layout.tsx        # Dashboard layout with navigation
+│   │   ├── page.tsx          # Dashboard overview page
+│   │   ├── loading.tsx       # Loading state for dashboard
+│   │   ├── invoices/
+│   │   │   ├── page.tsx      # Invoices list page
+│   │   │   ├── loading.tsx   # Loading state for invoices
+│   │   │   ├── create/
+│   │   │   │   └── page.tsx  # Create new invoice page
+│   │   │   └── [id]/
+│   │   │       └── edit/
+│   │   │           └── page.tsx  # Edit invoice page
+│   │   └── customers/
+│   │       └── page.tsx      # Customers list page
+│   ├── login/
+│   │   └── page.tsx          # Login page
+│   ├── layout.tsx            # Root layout
+│   ├── page.tsx              # Home page
+│   ├── globals.css           # Global styles
+│   ├── error.tsx             # Error handling page
+│   └── not-found.tsx         # 404 page
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx        # Reusable button component
+│   │   ├── input.tsx         # Input component
+│   │   └── card.tsx          # Card component
+│   ├── dashboard/
+│   │   ├── nav-links.tsx     # Navigation links with active state
+│   │   ├── sidenav.tsx       # Sidebar navigation
+│   │   ├── revenue-chart.tsx # Revenue visualization
+│   │   └── latest-invoices.tsx  # Recent invoices display
+│   ├── invoices/
+│   │   ├── table.tsx         # Invoice table component
+│   │   ├── status.tsx        # Status badge component
+│   │   └── create-form.tsx   # Invoice creation form
+│   ├── search.tsx            # Search component with debouncing
+│   └── pagination.tsx        # Pagination component
+├── lib/
+│   ├── actions.ts            # Server Actions for forms
+│   ├── data.ts               # Data fetching functions
+│   ├── definitions.ts        # TypeScript type definitions
+│   └── utils.ts              # Utility functions
+├── public/
+│   └── ...                   # Static assets (images, fonts)
+├── .env.example              # Environment variables template
+├── .gitignore                # Git ignore rules
+├── next.config.ts            # Next.js configuration
+├── package.json              # Project dependencies
+├── pnpm-lock.yaml            # pnpm lock file
+├── postcss.config.mjs        # PostCSS configuration
+├── tailwind.config.ts        # Tailwind CSS configuration
+└── tsconfig.json             # TypeScript configuration
+```
+
+</details>
+
+---
+
+## References
+
+This project is inspired by and references best practices from:
+- [Next.js SaaS Starter](https://github.com/nextjs/saas-starter) - A production-ready SaaS template
+- [Next.js Learn Dashboard Tutorial](https://nextjs.org/learn) - Official Next.js learning course
